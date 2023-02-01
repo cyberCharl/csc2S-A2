@@ -103,4 +103,10 @@ public class WordRecord {
 		return dropped;
 	}
 
+	// Removes word from screen by setting it to "" and stops it from falling.
+	public synchronized void wordEnd() {
+		text = "";
+		fallingSpeed = 0;
+	}
+
 }

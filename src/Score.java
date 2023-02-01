@@ -35,6 +35,7 @@ public class Score {
 	public synchronized void caughtWord(int length) {
 		caughtWords++;
 		gameScore+=length;
+		WordApp.scoreUpdate();
 	}
 
 	public synchronized void resetScore() {
